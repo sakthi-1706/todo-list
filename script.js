@@ -15,16 +15,16 @@ function addtask(){
         li.appendChild(span)
     }
     inputbox.value=""
-    saveData()
+    saveData();
 }
 listcontainer.addEventListener("click",function(e){
     if(e.target.tagName ==="LI"){
         e.target.classList.toggle("checked")
-        saveData()
+        saveData();
     }
     else if(e.target.tagName ==="SPAN"){
         e.target.parentElement.remove()
-        saveData()
+        saveData();
     }
 },false)
 
